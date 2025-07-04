@@ -1,0 +1,40 @@
+$bg-color: #b7bfde
+$grey-color: #454f5b
+$black-color: #161c24
+$main-color: #4295e4
+$stroke-color: #eaeaea
+$accent-color: #c7a17a
+$accent-color2: #a4815e
+
+
+html, body
+    height: 100%
+    background-color: $bg-color
+
+body
+    min-width: 320px
+    font-family: "Jost", sans-serif
+    color: $black-color
+
+.top-line
+    background-color: $grey-color
+    color: $bg-color
+    font-weight: 500
+    padding: 10px 0
+    a
+        color: $bg-color
+        transition: all .3s
+        &:hover
+            color: $main-color
+
+.navbar
+    img
+        height: 40px
+
+@media (max-width: 992px)
+    .callback
+        display: none
+
+@media (max-width: 768px)
+    .top-line
+        font-size: 12px

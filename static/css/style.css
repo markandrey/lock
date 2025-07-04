@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  background-color: #b7bfde;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Jost", sans-serif;
+  color: #161c24;
+}
+
+.top-line {
+  background-color: #454f5b;
+  color: #b7bfde;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.top-line a {
+  color: #b7bfde;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.top-line a:hover {
+  color: #4295e4;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+@media (max-width: 992px) {
+  .callback {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .top-line {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
