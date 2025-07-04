@@ -1,0 +1,83 @@
+{
+    "git.autoRepositoryDetection": "subFolders",
+    "breadcrumbs.enabled": true,
+
+    "debug.autoExpandLazyVariables": "on",
+    "debug.inlineValues": "on",
+
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fontSize": 14,
+    "editor.fontSize": 18,
+    "editor.smoothScrolling": true,
+    "editor.formatOnSave": true,
+    "workbench.tree.indent": 18,
+
+
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.importFormat": "absolute",
+    "python.analysis.enablePytestSupport": true,
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "django",
+            "depth": 3,
+            "includeAllSymbols": true
+        }
+    ],
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*/*/*.html": "django-html",
+        "**/templates/*": "django-html",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+
+    "[django-html]": {
+        "editor.defaultFormatter": "batisteo.vscode-django",
+        "breadcrumbs.showClasses": true,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/static/css",
+            "savePathReplacementPairs": null
+        },
+        {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/static/css"
+        }
+    ],
+   "liveSassCompile.settings.generateMap": true,
+   "liveSassCompile.settings.autoprefix": [
+       "> 1%",
+       "last 2 versions"
+    ],
+    "window.zoomLevel": 1,
+ }

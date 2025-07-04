@@ -7,10 +7,10 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+#.venv
 
 # ide
-.vscode
+# .vscode
 
 #django
 db.sqlite3
