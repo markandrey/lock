@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg top-navbar">
         <div class="container">
           <a class="navbar-brand" href="{% url "start:home" %}">
             <img src="{% static "images/logo.jpeg" %}" alt="">
@@ -118,8 +118,27 @@
 
           <div class="navbar-rightside">
             <ul>
-              <li class="navbar-phone"></li>
+              <li class="navbar-phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+71234567890">+71234567890</a>
+              </li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                  <i class="fa-regular fa-user"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end animate slideIn">
+                  <li><a href="#" class="dropdown-item">Регистрация</a></li>
+                  <li><a href="#" class="dropdown-item">Авторизация</a></li>
+                  <li><a href="#" class="dropdown-item">Личный кабинет</a></li>
+                </ul>
+              </li>
             </ul>
+
+            <form action="" class="search-form">
+              <input class="form-control" type="text" name="s" placeholder="Поиск товара..." required>
+              <button id="search-form-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
           </div>
         </div>
       </nav>
@@ -127,7 +146,7 @@
     </header>
 
 
-    <script src="{% static "bootstrap/js/bootstrap.bundle.min.js" %}"></script>
-    <script src="../static/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    <script src="{% static "bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
   </body>
 </html>

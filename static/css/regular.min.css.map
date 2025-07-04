@@ -1,1 +1,11 @@
-{"version":3,"sources":["../fonts/scss/regular.scss","../fonts/scss/_variables.scss"],"names":[],"mappings":"AAAA;;;;EAAA,CAQA,YACE,gDAAA,CACA,yDAAA,CAIF,WACE,iCAAA,CACA,iBAAA,CACA,eAAA,CACA,kBCgC0B,CD/B1B,oHAAA,CAIF,iBAEE,eAAA","file":"regular.min.css"}
+{
+    "version": 3,
+    "mappings": "AAAA;;;;GAIG,AAIH,AAAA,KAAK,CAAE,KAAK,AAAC,CACX,yBAAwC,CAAuB,sBAAC,CAChE,iBAAgC,CAAe,uCAAC,CACjD,AAGD,UAAU,CACR,WAAW,CAAE,qBAAqB,CAClC,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,YAAY,CEgCc,KAAK,CF/B/B,GAAG,CAAE,uCAA4C,CAAC,eAAe,CAC/D,qCAA0C,CAAC,kBAAkB,CAGjE,AAAA,IAAI,CACJ,WAAW,AAAgB,CACzB,WAAW,CAAE,GAAG,CACjB",
+    "sources": [
+        "../fonts/scss/regular.scss",
+        "../fonts/scss/_functions.scss",
+        "../fonts/scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "regular.min.css"
+}

@@ -27,9 +27,68 @@ body
         &:hover
             color: $main-color
 
-.navbar
-    img
-        height: 40px
+.top-navbar
+    box-shadow: inset 0 -2px 0 #c4cdd5
+    //тоже border-bottom: 1px solid #c4cdd5
+    .navbar-brand
+        margin-right: 50px
+        img
+            height: 40px
+    a
+        color: $black-color
+        font-size: 18px
+        font-weight: 300
+
+.navbar-rightside
+    display: flex
+    position: relative
+    a
+        transition: all .3s
+    ul i
+        color: $grey-color
+        font-size: 18px
+        transition: all .3s
+    .navbar-phone
+        .fa-phone
+            color: $main-color
+        a
+            text-decoration: none
+    &>ul
+        display: flex
+        list-style: none
+        gap: 25px
+        margin-bottom: 0
+        margin-right: 50px
+        &li>a:hover
+            color: $main-color
+    .search-form
+        position: absolute
+        right: 0
+        top: -5px
+        width: 100%
+        z-index: 2
+        .form-control
+            position: absolute
+            right: 0
+            border-radius: 20px
+            width: 0
+            opacity: 0
+            transition: all .3s
+            &.show
+                width: 100%
+                opacity: 1
+        button
+            position: absolute
+            right: 0
+            top: 1.5px
+            background-color: $grey-color
+            color: $stroke-color
+            border: 0
+            border-radius: 50%
+            width: 35px
+            height: 35px
+            font-size: 15px
+
 
 @media (max-width: 992px)
     .callback
