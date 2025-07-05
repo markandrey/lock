@@ -145,6 +145,194 @@
 
     </header>
 
+    <div class="slider">
+      <div class="container-fluid p-0">
+        <div id="carousel-indicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="btn-indicators active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" class="btn-indicators" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" class="btn-indicators" aria-label="Slide 3"></button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-8 col-lg-9">
+                  <img src="{% static "images/image1.png" %}" alt="">
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="carousel-text">
+                    <h5>Новая коолекция<br>из вареного хлопка</h5>
+                    <div class="carusel-description">
+                      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О прямо грамматики свое страна заглавных лучше приставка за, своего маленький точках дороге даль сбить.</p>
+                    </div>
+                    <div class="carusel-price">
+                      <strong>4 500₽</strong>
+                      <del>5 500₽</del>
+                      <p class="carusel-btn">
+                        <a href="#" class="btn btn-primary">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-8 col-lg-9">
+                  <img src="{% static "images/image2.png" %}" alt="">
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="carousel-text">
+                    <h5>Новая коолекция<br>из вареного хлопка</h5>
+                    <div class="carusel-description">
+                      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О прямо грамматики свое страна заглавных лучше приставка за, своего маленький точках дороге даль сбить.</p>
+                    </div>
+                    <div class="carusel-price">
+                      <strong>4 500₽</strong>
+                      <del>5 500₽</del>
+                      <p class="carusel-btn">
+                        <a href="#" class="btn btn-primary">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-8 col-lg-9">
+                  <img src="{% static "images/image3.png" %}" alt="">
+                </div>
+                <div class="col-md-4 col-lg-3">
+                  <div class="carousel-text">
+                    <h5>Новая коолекция<br>из вареного хлопка</h5>
+                    <div class="carusel-description">
+                      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О прямо грамматики свое страна заглавных лучше приставка за, своего маленький точках дороге даль сбить.</p>
+                    </div>
+                    <div class="carusel-price">
+                      <strong>4 500₽</strong>
+                      <del>5 500₽</del>
+                      <p class="carusel-btn">
+                        <a href="#" class="btn btn-primary">Купить</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <section class="why-us">
+      <div class="container">
+        <h1>Почему "Тихая Роскошь?"</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="why-us-card">
+              <img src="{% static "icons/pi1.svg" %}" alt="">
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал его приставка продолжил единственное курсивных даже эта безорфографичный раз.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="why-us-card">
+              <img src="{% static "icons/pi2.svg" %}" alt="">
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="why-us-card">
+              <img src="{% static "icons/p3.svg" %}" alt="">
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал его приставка продолжил единственное курсивных даже эта безорфографичный раз.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-category">
+      <div class="container">
+        <h1>Категории</h1>
+        <div class="row row-gap-4">
+          <div class="col-6">
+            <div class="main-categories-card">
+              <a href="#">
+                <div class="main-categories-card-img">
+                  <img src="{% static "images/image1.png" %}" alt="">
+                </div>
+              </a>
+              <div class="main-categories-card-description">
+                <h3>Для отелей</h3>
+                <a href="#" class="btn btn-outline-dark">Перейти</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="main-categories-card">
+              <a href="#">
+                <div class="main-categories-card-img">
+                  <img src="{% static "images/image2.png" %}" alt="">
+                </div>
+              </a>
+              <div class="main-categories-card-description">
+                <h3>Для домов</h3>
+                <a href="#" class="btn btn-outline-dark">Перейти</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="main-categories-card">
+              <a href="#">
+                <div class="main-categories-card-img">
+                  <img src="{% static "images/image3.png" %}" alt="">
+                </div>
+              </a>
+              <div class="main-categories-card-description">
+                <h3>Для улиц</h3>
+                <a href="#" class="btn btn-outline-dark">Перейти</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="main-categories-card">
+              <a href="#">
+                <div class="main-categories-card-img">
+                  <img src="{% static "images/image1.png" %}" alt="">
+                </div>
+              </a>
+              <div class="main-categories-card-description">
+                <h3>Для отелей</h3>
+                <a href="#" class="btn btn-outline-dark">Перейти</a>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center">
+            <a href="#" class="btn btn-primary mian-all-categories">Все категории</a>
+          </p>
+
+        </div>
+
+
+      </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>    <script src="{% static "bootstrap/js/bootstrap.bundle.min.js" %}"></script>
     <script src="{% static "js/main.js" %}"></script>

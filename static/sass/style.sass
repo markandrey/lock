@@ -1,7 +1,9 @@
 $bg-color: #b7bfde
+$bg-light-color: #c1c7dd
 $grey-color: #454f5b
 $black-color: #161c24
 $main-color: #4295e4
+$main-light-color: #62a8ea
 $stroke-color: #eaeaea
 $accent-color: #c7a17a
 $accent-color2: #a4815e
@@ -15,6 +17,33 @@ body
     min-width: 320px
     font-family: "Jost", sans-serif
     color: $black-color
+
+section h1
+    color: $black-color
+    font-size: 44px
+    line-height: 62px
+    font-weight: 500
+    margin-bottom: 50px
+    text-align: center
+
+.btn
+    padding: 12px 35px
+    font-weight: 500
+
+.btn-primary
+    background-color: $main-color
+    border-color: $main-color
+    &:hover
+        background-color: $main-light-color
+        border-color: $main-light-color
+
+.dropdown-toggle::after
+    content: "\f078"
+    font-family: "Font Awesome 6 Free"
+    font-weight: 900
+    border: 0
+    font-size: 10px
+
 
 .top-line
     background-color: $grey-color
@@ -33,11 +62,42 @@ body
     .navbar-brand
         margin-right: 50px
         img
-            height: 40px
+            height: 35px
     a
         color: $black-color
         font-size: 18px
         font-weight: 300
+    .navbar-nav>li
+        margin: 0 5px
+        &::after
+            content: ""
+            width: 100%
+            display: block
+            border-bottom: 1px solid $grey-color
+            transform: scale(0)
+            transition: all .3s
+        &:hover::after
+            transform: scale(1)
+
+.megamenu
+    box-shadow: 0 4px 18px -5px rgba(0, 0, 0, .5)
+    padding: 1rem
+    border-radius: 4px
+    .title
+        border-bottom: 1px solid $main-color
+        font-weight: 500
+        color: $black-color
+        line-height: 26px
+    li
+        margin-bottom: 5px
+    a
+        color: $grey-color
+        text-decoration: none
+        font-size: 16px
+        transition: all .3s
+        &:hover
+            color: $black-color
+            text-decoration: underline
 
 .navbar-rightside
     display: flex
@@ -59,8 +119,13 @@ body
         gap: 25px
         margin-bottom: 0
         margin-right: 50px
-        &li>a:hover
+        &>li>a:hover,
+        &>li>a:hover i
             color: $main-color
+    .dropdown-item:hover
+        background-color: $grey-color
+        color: $bg-color
+
     .search-form
         position: absolute
         right: 0
@@ -89,6 +154,75 @@ body
             height: 35px
             font-size: 15px
 
+.slider
+    background-color: $bg-light-color
+    .carousel
+        padding-bottom: 40px
+    .carousel-control-prev,
+    .carousel-control-next
+        position: relative
+        background-color: transparent
+    .carousel-indicators .btn-indicators
+        width: 120px
+        height: 2px
+    img
+        width: 100%
+        height: 470px
+        object-fit: cover
+    .carousel-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+        h5
+            color: $black-color
+            font-size: 44px
+            line-height: 50px
+            font-weight: 500
+        .carusel-description
+            max-width: 70%
+        .carusel-price
+            strong
+                color: $black-color
+                font-size: 24px
+                font-weight: 600
+                margin-right: 20px
+            del
+                color: #a4a4a4
+                font-size: 20px
+                font-weight: 300
+
+.why-us
+    text-align: center
+    margin: 90px 0
+    .why-us-card
+        border-left: 1px solid $main-light-color
+        border-right: 1px solid $main-light-color
+        padding: 20px
+        height: 100%
+        p
+            font-size: 20px
+            line-height: 32px
+            margin-top: 30px
+
+.main-category
+    margin: 90px 0
+    padding: 40px
+    .main-categories-card-img
+        text-align: right
+        &>img
+            height: 300px
+            width: 100%
+            object-fit: cover
+    .main-categories-card-description
+        h3
+            font-size: 22px
+            line-height: 34px
+            font-weight: 500
+            color: $black-color
+        .btn
+            padding: 12px 70px
+
 
 @media (max-width: 992px)
     .callback
@@ -97,3 +231,38 @@ body
 @media (max-width: 768px)
     .top-line
         font-size: 12px
+    .why-us
+        margin: 40px 0
+        h1
+            font-size: 22px
+            line-height: 34px
+            margin-bottom: 25px
+        .row
+            gap: 20px
+        .why-us-card
+            border: 0
+            border-top: 1px solid $main-light-color
+            border-bottom: 1px solid $main-light-color
+            padding: 20px
+            p
+                font-size: 16px
+                line-height: 26px
+                margin-top: 15px
+
+
+@media (min-width: 992px)
+    .top-navbar
+        .dropdown
+            position: static
+            &:hover>.dropdown-menu
+                display: block
+            .megamenu
+                top: 50px
+                left: 0
+                right: 0
+                margin: auto
+
+    .navbar-rightside .dropdown-menu-end
+        right: 0
+        left: auto
+        margin-top: 0
